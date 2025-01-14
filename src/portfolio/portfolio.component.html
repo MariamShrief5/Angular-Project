@@ -1,0 +1,25 @@
+<section>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-center align-items-center flex-column">
+        <h2 class="text-uppercase text-center my-3">portflio component</h2>
+        <i class="fa-solid fa-star ms-1"></i>
+        </div>
+        <div class="row g-4 my-4">
+            @for (image of images; track $index) {
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="position-relative hoverOn" (click)="showImage(image.imgSrc)">
+                        <img class="d-block w-100" [src]="image.imgSrc" alt="">
+                        <div class="position-absolute w-100 top-0 start-0 d-flex justify-content-center align-items-center h-100 layer opacity-0">
+                            <i class="fa-solid fa-plus text-center text-white fs-1 fw-bold"></i>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        @if (selectedImage) {
+            <div class="selected-image" (click)="closeImage()">
+                <img [src]="selectedImage" alt="Selected Image" />
+            </div>
+        }
+    </div>
+</section>

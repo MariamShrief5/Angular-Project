@@ -1,0 +1,18 @@
+nav{
+    background-color: #2c3e4f;
+}
+.navbar-toggler-icon{
+    color: white !important;
+}
+i{
+    color: white;
+}
+.navbar {
+    --bs-navbar-toggler-border-color: rgba(255,255,255);
+}
+.path-active{
+    border: 1px solid  #1abc9c;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #1abc9c;
+}

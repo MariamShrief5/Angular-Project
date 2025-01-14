@@ -1,0 +1,23 @@
+footer{
+    background-color: #2c3e4f;
+    position: relative;
+}
+.copy-right{
+    position: absolute;
+    right: 0;
+    left: 0;
+    background-color: #1e2939;
+}
+
+i{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.location{
+    max-width: 200px;
+    line-height: 1.9rem;
+}
+.freelance{
+    max-width: 400px;
+}

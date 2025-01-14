@@ -1,0 +1,80 @@
+img{
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.hoverOn:hover .layer{
+    opacity: 1 !important;
+}
+.layer{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #1abc9ce6;
+    cursor: pointer;
+    transition: .6s opacity;
+}
+.over{
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.selected-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+.selected-image img {
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 10px;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+}
+h2{
+    position: relative;
+    color: rgb(44, 62, 80);
+}
+i{
+    color: rgb(44, 62, 80);
+    margin-top: -2px;
+}
+h2::after{
+    content:"";
+    position: absolute;
+    left: 56%;
+    bottom: -60%;
+    width: 90px;
+    height: 3px;
+    background-color: rgb(44, 62, 80);
+}
+h2::before{
+    content:"";
+    position: absolute;
+    bottom: -60%;
+    right: 55%;
+    width: 90px;
+    height: 3px;
+    background-color: rgb(44, 62, 80);
+}
+@media screen and (min-width: 400px) and (max-width: 650px)  {
+    i{
+        margin-top: -7px;
+    }
+}

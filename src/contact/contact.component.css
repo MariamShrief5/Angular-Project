@@ -1,0 +1,52 @@
+h2{
+    position: relative;
+    color: rgb(44, 62, 80);
+}
+.btn-success {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #1abc9c;
+    --bs-btn-border-color: #1abc9c;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1abc9c;
+    --bs-btn-hover-border-color: #1abc9c;
+    --bs-btn-focus-shadow-rgb: 60, 153, 110;
+}
+i{
+    color: rgb(44, 62, 80);
+    margin-top: -2px;
+}
+h2::after{
+    content:"";
+    position: absolute;
+    left: 56%;
+    bottom: -60%;
+    width: 90px;
+    height: 3px;
+    background-color: rgb(44, 62, 80);
+}
+h2::before{
+    content:"";
+    position: absolute;
+    bottom: -60%;
+    right: 55%;
+    width: 90px;
+    height: 3px;
+    background-color: rgb(44, 62, 80);
+}
+input{
+    width: 50vw;
+    outline: none;
+    box-shadow: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+@media screen and (min-width: 400px) and (max-width: 650px)  {
+    input{
+        width: 80vw;
+    }
+    i{
+        margin-top: -7px;
+    }
+}

@@ -1,0 +1,39 @@
+section{
+    background-color: #1abc9c;
+}
+.container{
+    height: 80vh;
+}
+img{
+    width: 60%;
+    display: block;
+}
+i{
+    margin-top: 12px;
+}
+h1{
+    position: relative;
+}
+h1::after{
+    content:"";
+    position: absolute;
+    left: 56%;
+    bottom: -60%;
+    width: 90px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+}
+h1::before{
+    content:"";
+    position: absolute;
+    bottom: -60%;
+    right: 55%;
+    width: 90px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 400px) and (max-width: 800px)  {
+    i{
+        margin-top: 4px;
+    }
+}
